@@ -11,7 +11,7 @@ RUN apt install curl
 COPY package.json package-lock.json* ./
 
 # Install all dependencies (including devDependencies)
-RUN npm ci
+RUN npm install
 
 # Copy source code
 COPY . .
